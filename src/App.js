@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-title">
-          TikTok to {this.state.deadline}
+          <span className="brand">TikTok</span>{this.state.deadline}
         </div>
         <Clock
           deadline = {this.state.deadline}
