@@ -1,0 +1,68 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 174, 198)), to(#faa23c)) fixed;
+}
+
+.App {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15%;
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: 100;
+}
+
+.App-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.Clock {
+  margin: 20px 0px 35px;
+}
+
+.Days, .Hours, .Minutes, .Seconds {
+  display: inline;
+  margin: 0px 10px;
+}
+
+button {
+  border-radius: 0px;
+  font-size: 14px;
+  background: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: rgba(255,255,255,.2);
+  cursor: pointer;
+}
+
+input {
+  margin: 10px;
+  padding: 10px 10px;
+  border: 1px solid white;
+  font-size: 14px;
+  color:#faa23c;;
+}
+
+::placeholder {
+  color: #ccc;
+  font-weight: 100;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+} */
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
