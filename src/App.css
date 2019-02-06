@@ -9,11 +9,11 @@ body {
 .App {
   text-align: center;
   font-size: 24px;
-  margin-top: 15%;
+  margin-top: 10%;
   color: #fff;
   font-family: Helvetica;
   font-weight: 100;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .App-title {
