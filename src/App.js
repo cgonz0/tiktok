@@ -1,20 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
+
 // import { Form, FormControl, Button} from 'react-bootstrap';
 
-
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
+    let now = new Date();
+    let future = now.setDate(now.getDate() + 1);
+    let options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    };
     this.state = {
-      deadline: 'November 18, 2018',
+      deadline: now.toLocaleDateString("en-us", options),
       newDeadline: ''
     };
     this.changeDeadline = this.changeDeadline.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
+
 
   changeDeadline() {
     this.setState({deadline: this.state.newDeadline})
@@ -38,8 +46,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-title">
-          <span className="brand">TikTok</span>{this.state.deadline}
+          <span className="brand">TikTok</span>
+          <div className="countdown">Countdown to</div>
+          {this.state.deadline}
         </div>
+        <hr></hr>
         <Clock
           deadline = {this.state.deadline}
         />

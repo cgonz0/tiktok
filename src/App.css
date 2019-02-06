@@ -24,7 +24,7 @@ body {
 
 .brand {
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-style: normal;
   font-size: 80px;
   display: block;
@@ -35,6 +35,20 @@ body {
   text-shadow: 7px 7px 0 rgba(255,0,180,0.5);
 }
 
+.countdown {
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: .5em;
+  font-style: normal;
+  margin-bottom: 10px;
+  animation-name: track;
+  animation-duration: 1.5s;
+}
+
+@keyframes track {
+  from {letter-spacing: 2em;}
+  to {background-color: .5em;}
+}
 
 .Clock {
   margin: 20px 0px 35px;
@@ -43,6 +57,10 @@ body {
 .Days, .Hours, .Minutes, .Seconds {
   display: inline;
   margin: 0px 10px;
+}
+
+hr {
+  width: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -77,7 +95,7 @@ input {
 }
 
 ::placeholder {
-  color: #ccc;
+  color: #b2b2b2;
   font-weight: 100;
 }
 
