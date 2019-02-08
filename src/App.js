@@ -47,9 +47,9 @@ class App extends React.Component {
       <div className="App">
         <div className="App-title">
           <span className="brand">TikTok</span>
-          <div className="countdown">Countdown to</div>
-          {this.state.deadline}
         </div>
+        <div className="countdown">Countdown to</div>
+        <div className="Date">{this.state.deadline}</div>
         <hr></hr>
         <Clock
           deadline = {this.state.deadline}

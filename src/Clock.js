@@ -55,10 +55,25 @@ class Clock extends Component {
     // this.getTimeUnitl(this.props.deadline);
     return (
       <div className="Clock">
-        <div className="Days">{this.leading0(this.state.days)} days</div>
-        <div className="Hours">{this.leading0(this.state.hours)} hours</div>
-        <div className="Minutes">{this.leading0(this.state.minutes)} minutes</div>
-        <div className="Seconds">{this.leading0(this.state.seconds)} seconds</div>
+        <div className="Days-wrapper">
+          <div className="Days">{this.leading0(this.state.days)}</div>
+          <div className="Days-text">days</div>
+        </div>
+
+        <div className="Hours-wrapper">
+          <div className="Hours">{this.leading0(this.state.hours)}</div>
+          <div className="Hours-text">hours</div>
+        </div>
+
+        <div className="Minutes-wrapper">
+          <div className="Minutes">{this.leading0(this.state.minutes)}</div>
+          <div className="Minutes-text">minutes</div>
+        </div>
+
+        <div className="Seconds-wrapper">
+          <div className="Seconds">{this.leading0(this.state.seconds)}</div>
+          <div className="Seconds-text">seconds</div>
+        </div>
       </div>
     )
   }
