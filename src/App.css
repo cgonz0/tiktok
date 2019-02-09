@@ -59,7 +59,8 @@ body {
 
 .Days-wrapper, .Hours-wrapper, .Minutes-wrapper, .Seconds-wrapper {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Days, .Hours, .Minutes, .Seconds {
